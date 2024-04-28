@@ -1,0 +1,123 @@
+:root{
+    --clr-dark: #24203f;
+    --clr-light: #7d7d7d7d;
+    --clr-purple: #150d26;
+    --clr-blue: #00eaff;
+    --clr-slate: #94a3b8;
+    --clr-grey: #ffffff57;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5rem;
+}
+
+body{
+    background-color: var(--clr-dark);
+    color: var(--clr-slate);
+}
+
+main{
+    background-color: var(--clr-purple);
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 13px;
+    box-shadow: 0 20px 20px #000;
+}
+
+.card{
+    padding: 30px 15px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--clr-blue);
+    padding: 5px;
+}
+
+.title{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 21px;
+}
+
+.title p{
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.desc{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.contact{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact a{
+    background-color: transparent;
+    border: 1px solid var(--clr-blue);
+    text-decoration: none;
+    width: 90px;
+    text-align: center;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    color: var(--clr-blue);
+}
+
+.contact a:hover{
+    background-color: var(--clr-blue);
+    color: var(--clr-dark);
+}
+
+.skills{
+    background-color: var(--clr-dark);
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.skills h2{
+    font-size: 12px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags p{
+    border: 0.5px solid var(--clr-grey);
+    background-color: transparent;
+    padding: 6px;
+    margin: 3px 10px 3px 0;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 12px;
+    box-shadow: 0 5px 5px #000;
+}
+
+.tags p:hover{
+    border: 0.5px solid var(--clr-blue);
+    color: var(--clr-blue);
+}
